@@ -1,0 +1,23 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is a notebook containing data and notes for the Left Handed Warrior project done in [Israel Abramov's](http://userhome.brooklyn.cuny.edu/iabramov/) lab. 
+
+Abstract
+An unusual but prevalent phenomenon in illustration is the depiction of characters holding weapons in their left hands. For a viewer, the weapon placement appears to be on the right side of space, however the actual placement is in the sinistral hand. This occurs so frequently that it seems to surpass the expected rate of left-handers in the population. Possible explanations for this phenomenon are handedness of the artist, aesthetic preference, rightward bias due to written language, disparities within the visual system or mental rotation difficulties. The goal of this study is to initialize the systematic investigation of the left-handed bias in illustration. Participants were asked to draw a character holding a spoon and another holding a weapon. Shepherd’s (1971) mental rotation test was administered between drawing tasks to serve as a manipulation to "prime" participants to spatially rotate their drawn figures. Participant’s scores for the mental rotation task were used as factors in a chi-square test of independence. Accompanying data was extrapolated from questionnaires participants filled at the end of their experimental session. Questions were related to handedness, language fluency, and drawing frequency. Preliminary findings were inconclusive due to an insignificant quantity of subjects. With current data, none of the measures were significant. 
+
+Data
+```{r}
+my_data <- read.table(pipe("pbpaste"), header = TRUE)
+
+#age related outputs
+min_age<- min(my_data$AGE)
+max_age<- max(my_data$AGE)
+avg_age<- mean(my_data$AGE)
+
+#MRT related outputs
+
+```
+
