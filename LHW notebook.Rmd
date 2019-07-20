@@ -10,7 +10,10 @@ An unusual but prevalent phenomenon in illustration is the depiction of characte
 
 Data
 ```{r}
-my_data <- read.table(pipe("pbpaste"), header = TRUE)
+library(readxl)
+library(dplyr)
+my_data <- read_xlsx("~/Desktop/Issy Lab/LHW Code/LHW-R/LHW-data.xlsx", sheet = 1)
+my_data<- my_data[2:13]
 
 #age related outputs
 min_age<- min(my_data$AGE)
@@ -18,6 +21,7 @@ max_age<- max(my_data$AGE)
 avg_age<- mean(my_data$AGE)
 
 #MRT related outputs
+
 
 ```
 
